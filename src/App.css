@@ -1,0 +1,17 @@
+.App {
+  width: 100vw;
+  overflow-x: hidden;
+  /*height: 100vh;*/
+}
+.divider{
+	width: 80%;
+	height: 1px;
+	background: lightgrey;	
+	margin: 0 auto;
+}
+.text-3{
+	font-family:'QuickSand',sans-serif;
+	font-size:14px;
+	color:black;
+}
+

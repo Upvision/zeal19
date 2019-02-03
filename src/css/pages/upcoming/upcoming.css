@@ -1,0 +1,31 @@
+.Upcoming{
+	background:#000001;
+	min-height:100vh;
+}
+
+.events-cont{
+	width: 78vw;
+	margin: 0 auto;
+}
+.nav{
+	font-size:20px;
+	height:60px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: black !important;
+	margin-bottom: 20px;
+	background: white;
+	padding-left:20px;
+	font-family: 'Quicksand',sans-serif;
+}
+a{
+	text-decoration: none;
+	outline: none;
+	color:black !important;
+}
+@media only screen and (max-width:10in){
+	.events-cont{
+		width:100vw;
+	}
+}

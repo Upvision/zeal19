@@ -1,0 +1,64 @@
+#Login{
+	width:50vw;
+	height:60vh;
+	background:white;
+	position: fixed;
+	top:20vh;
+	left:25vw;
+	border-radius: 10px;
+	transition:0.2s;
+	overflow: hidden;
+	transform: scale(0,0);
+}
+.login-cont{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.login-cls-btn{
+	width:30px;
+	height:30px;
+	background: white;
+	position: absolute;
+	right: 20px;
+	top:20px;
+	border-radius:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size:25px;
+	line-height: 1 !important;
+	padding-bottom:5px;
+	font-weight: bold;
+	border: 1px solid black;
+	cursor: pointer;
+	font-family:'QuickSand',sans-serif;
+}
+.login-banner{
+	height: 60vh;
+	width: 25vw;
+}
+.login-text-cont{
+	height: 100%;
+	width: 50%;
+	padding-top: 30px;
+	/*background: red;*/
+}
+.login-quote{
+	padding: 10% 10%;
+}
+.login-btn-cont{
+	padding:10% 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/*background: red;*/
+	font-weight: normal !important;
+	color:grey;
+}
+.login-btn-cont button{
+	width: 200px !important;
+	font-family: 'QuickSand',sans-serif;
+}

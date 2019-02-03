@@ -1,0 +1,50 @@
+.NavBar{
+	/*background:white;*/
+	position: fixed;
+	height: 70px;
+	width: 100vw;
+	z-index: 100;
+	padding: 0 50px;
+  /*-moz-box-shadow:    1px 1px 3px 2px grey;*/
+  /*-webkit-box-shadow: 1px 1px 3px 2px grey;*/
+  /*box-shadow:         1px 1px 3px 2px grey;*/
+}
+
+.nav-cont{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	/*justify-content: space-between;*/
+	color: black;
+}
+.nav-logo{
+	height:50px;
+	/*margin-bottom: 10px;*/
+}
+.nav-tit{
+	margin-bottom: 15px;
+	margin-left: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'QuickSand',sans-serif;
+}
+.nav-login-btn{
+	border: 1px solid white;
+	font-family: 'QuickSand',sans-serif;
+	padding: 7px 20px;
+	color: white;
+	cursor: pointer;
+	border-radius:3px;
+	transition:0.5s;
+	font-weight: bold;
+}
+.nav-login-btn:hover{
+	color: black;
+	background:white;
+}
+@media only screen and (max-width:10in){
+	.NavBar{
+		padding: 0 25px;
+	}
+}

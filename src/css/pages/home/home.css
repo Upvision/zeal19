@@ -1,0 +1,104 @@
+.Home{
+	background: #000100;
+	width:100vw;
+	height: 100vh;
+	/*overflow: hidden;*/
+}
+.land-main{
+	/*background-position: center;*/
+	/*background-size: cover;*/
+	height:100vh;
+	width:100vw;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	/*padding-bottom: 15%;*/
+	/*margin: 0 auto;*/
+}
+#landing-back{
+	position: absolute;
+	height: 100vh;
+	z-index: 2;
+	width: 100vw;
+	/*background: rgba(0,0,0,0.1);*/
+}
+.land-main-banner{
+	width:400px;
+	height: 300px;
+	/*margin-bottom:15%; */
+}
+.main-title{
+	font-size:90px;
+	color:black;
+	z-index: 10;
+	/*font-weight: bold;*/
+	/*margin-bottom:2%;*/
+	letter-spacing: 8px;
+	font-family: 'Quicksand',sans-serif;
+}
+.main-tag-line{
+	font-size: 25px;
+	z-index: 10;
+	color:black;
+	margin-bottom:2%;
+	font-family: 'Quicksand',sans-serif;
+	word-spacing:150%;
+	text-align: center;
+}
+.main-tag-line span{
+	font-weight: bold;
+	font-size: 27px;
+}
+.countdown-timer{
+background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+	padding: 10px 15px;
+	display: flex;
+	flex-wrap: wrap;
+	width:240px;
+	margin-bottom: 15%;
+	/*border-radius:5px;*/
+}
+.countdown-box{
+	width:80px;
+	font-size:15px; 
+	text-align: center;
+	color:black;
+}
+.countdown-font{
+	font-size: 20px !important;
+}
+
+@media only screen and (max-width:10in){
+.land-main{
+	justify-content: center;
+}
+.land-main-banner{
+	width:350px;
+	height: 300px;
+	margin-bottom:25%; 
+}
+.main-title{
+	font-size:40px;
+	margin-bottom:3%;
+	letter-spacing:5px;
+	/*margin-top: 20%;*/
+	font-weight: bold;
+}
+.main-tag-line{
+	font-size: 25px;
+	margin-bottom: 4%;
+}
+.main-tag-line span{
+	font-weight: bold;
+	font-size: 18px;
+}
+.countdown-timer{
+	margin-bottom:24vh;
+}
+}
+
+
+/*css for scroll down*/
