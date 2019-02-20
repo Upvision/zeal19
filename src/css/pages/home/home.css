@@ -1,8 +1,27 @@
 .Home{
 	background: #000100;
 	width:100vw;
-	height: 100vh;
+	/*height: 100vh;*/
 	/*overflow: hidden;*/
+}
+#GE{
+	width:100vw;
+	height: 100vh;
+	position: fixed;
+	background: black;
+	color:white;
+	top:0;
+	display: none;
+	font-family: 'Quicksand',sans-serif;
+	font-size: 28px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	z-index: 10005;
+	padding: 10%;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 .land-main{
 	/*background-position: center;*/
@@ -39,12 +58,12 @@
 	font-family: 'Quicksand',sans-serif;
 }
 .main-tag-line{
-	font-size: 25px;
+	font-size: 29px;
 	z-index: 10;
 	color:black;
 	margin-bottom:2%;
 	font-family: 'Quicksand',sans-serif;
-	word-spacing:150%;
+	/*word-spacing:150%;*/
 	text-align: center;
 }
 .main-tag-line span{
@@ -60,6 +79,7 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 	width:240px;
 	margin-bottom: 15%;
 	/*border-radius:5px;*/
+	justify-content: center;
 }
 .countdown-box{
 	width:80px;
@@ -67,10 +87,92 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 	text-align: center;
 	color:black;
 }
+.fest-live{
+	margin:6px 0;
+	font-family: 'Roboto',sans-serif;
+	font-size: 18px;
+}
 .countdown-font{
 	font-size: 20px !important;
 }
+.animation-wrapper{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	background: white;
+	padding-top: 5%;
+	height:60px;
+	align-items: center;
+}
+.anim-tit{
+	font-size:40px;
+	font-family: 'Quicksand',sans-serif;
+	/*font-weight: bold;*/
+	letter-spacing:3px;
+	color:teal;
+	margin: 0 20px;
+}
+.line-wrapper1{
+	height:50px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	flex-direction: column;
+	justify-content: center;
+}
+.line-wrapper2{
+	height:50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	/*background: red;*/
+}
+.line1{
+	height:2px;
+	background: rgba(0,0,0,0.4);
+}
+.line2{
+	height:2px;
+	background: black;
+	margin: 5px 0;	
+}
+.animate{
+	width:150px;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-duration: 1.5s;	
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {width: 0px;}
+  to {width: 150px;}
+}
 
+/* Standard syntax */
+@keyframes example {
+  from {width: 0px;}
+  to {width: 150px;}
+}
+.animate2{
+	width:220px;
+	-webkit-animation-name: examplee; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+	animation-name: examplee;
+	animation-duration: 1s;	
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes examplee {
+  from {width: 0px;}
+  to {width: 220px;}
+}
+
+/* Standard syntax */
+@keyframes examplee {
+  from {width: 0px;}
+  to {width: 220px;}
+}
 @media only screen and (max-width:10in){
 .land-main{
 	justify-content: center;
@@ -98,7 +200,62 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
 .countdown-timer{
 	margin-bottom:24vh;
 }
+.anim-tit{
+	font-size:25px;
+}
+.line1{
+	height:2px;
+	background: rgba(0,0,0,0.4);
+}
+.line2{
+	height:2px;
+	background: black;
+	margin: 5px 0;	
+}
+.animate{
+	width:50px;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+	animation-name: example;
+	animation-duration: 0.5s;	
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {width: 0px;}
+  to {width: 50px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {width: 0px;}
+  to {width: 50px;}
+}
+.animate2{
+	width:80px;
+	-webkit-animation-name: examplee; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+	animation-name: examplee;
+	animation-duration: 0.5s;	
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes examplee {
+  from {width: 0px;}
+  to {width: 80px;}
+}
+
+/* Standard syntax */
+@keyframes examplee {
+  from {width: 0px;}
+  to {width: 80px;}
+}
+.animation-wrapper{
+	padding-top: 15%;
+	padding-bottom: 10%;
+}
 }
 
 
+.live-cont{
+	margin:10px 0;
+}
 /*css for scroll down*/

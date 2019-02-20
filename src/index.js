@@ -19,7 +19,7 @@ ReactDOM.render(
 			<Router>
 		    	<App />
 		  	</Router>
-		  	{/*<Footer/>*/}
+		  	<Footer/>
 	  	</div>,
 	document.getElementById('root')
 );

@@ -1,0 +1,28 @@
+.Button{
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	padding:8px 20px;
+	font-family: 'Raleway',sans-serif;
+	font-size:14px !important;
+	display: inline-block;
+	margin:7px 10px 7px 0px;
+	cursor: pointer;
+	transition: 0.1s;
+}
+.Button:hover{
+	color:black;
+	border: 1px solid black;
+}
+.btn-icon{
+	/*width:15px;*/
+	/*margin-top:5px;*/
+	padding: 0;
+	margin:0;
+	vertical-align: sub;
+	margin-right:5px;
+}
+@media only screen and (max-width:10in){
+	.Button{
+		font-size: 12px !important;
+	}
+}

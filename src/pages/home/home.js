@@ -1,26 +1,20 @@
 import React, { Component } from 'react';
+
+import Events from '../../components/home/events.js'
 // o
 import {Link} from 'react-router-dom'
 
 import '../../css/pages/home/home.css';
-import Background from '../../static/blackcontroller1.png'
-import Background1 from '../../static/banner23.jpg'
-import Background2 from '../../static/banner2.jpg'
+import Background1 from '../../static/banner24-min.jpg'
+import GE from '../../components/ge.js'
 
 
 
-const landStyle = {
-	    background: 'url('+ '' + ')  top left fixed',
-	    backgroundSize: 'cover',
-	}
 const secStyle = {
-	    background: 'url('+ Background1 + ')  center fixed',
-	    backgroundSize: 'cover',
-	}
-const thiStyle = {
 	    background: 'url('+ Background1 + ')  center ',
 	    backgroundSize: 'cover',
 	}
+
 class Home extends Component {
 	constructor(props){
 		super(props)
@@ -43,48 +37,64 @@ class Home extends Component {
 		  				<br/>
 
 		  			</div>
-		  			<div className="countdown-timer">
+		  			<div className="countdown-timer" id="countdown-timer">
 		  				{this.handleTimer()}
 		  			</div>
 		  			<div id="landing-back">
 		  			</div>
 		  		</div>
-
+		  		<div className="animation-wrapper" id="Events-Wrap">
+		  			<div className="line-wrapper1">
+		  				<div className="line1">
+		  				</div>
+		  				<div className="line2">
+		  				</div>
+		  				<div className="line1">
+		  				</div>
+		  			</div>
+		  			<div className="anim-tit">
+		  					EVENTS
+		  			</div>
+		  			<div className="line-wrapper2">
+		  				<div className="line1">
+		  				</div>
+		  				<div className="line2">
+		  				</div>
+		  				<div className="line1">
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<Events/>
+		  		<GE/>
 		  </div>
 		);
 	}
 	handleTimer = ()=>{
-		let a = ['25','30','20','days','hrs','mins']
-		// Set the date we're counting down to
-		let countDownDate = new Date("Feb 9, 2019 09:30:00").getTime();
-		let now = new Date().getTime();		
+		return (
+			<div className="fest-live">
+				9th Feb - 12th Feb
+			</div>
+		)
 
-		let distance = countDownDate - now;
-		// Time calculations for days, hours, minutes and seconds
-		a[0] = Math.floor(distance / (1000 * 60 * 60 * 24));
-		a[1] = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		a[2] = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+	}
+	componentDidMount(){
+		let el = document.getElementById('Events-Wrap')
+		let lines = document.querySelectorAll(".line1"); 
+		let lines2 = document.querySelectorAll(".line2"); 
 
-		let i = 0
-		return a.map((e=>{
+		let status = false
 
-			if(i<3){
-				i=i+1
-				return(
-					<div className="countdown-box countdown-font">
-						{e}
-					</div>
-				)
+		window.addEventListener('scroll',()=>{
+			status = window.scrollY > window.innerHeight/2
+			if(status){
+				for(let i = 0; i < lines.length; i++) {
+					lines[i].className+=' animate'
+				}
+				for(let i = 0; i < lines2.length; i++) {
+					lines2[i].className+=' animate2'
+				}
 			}
-			else{
-				i = i+1
-				return(
-					<div className="countdown-box">
-						{e}
-					</div>
-				)
-			}
-		}))
+		})
 	}
 }
 
